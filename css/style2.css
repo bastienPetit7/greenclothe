@@ -897,7 +897,7 @@ h3{
   }
 
   .body-collection{
-      min-height: 100vh;
+      /* min-height: 100vh; */
       background-color: var(--main-white);
       /* cursor: pointer; */
 
@@ -907,7 +907,7 @@ h3{
       position: relative;
       width: 1200px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 20px;
       padding: 20px;
   }
@@ -934,7 +934,7 @@ h3{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover ;
     transition: 0.5s ease-in-out;
     transform-origin: right;
 }
@@ -1077,3 +1077,9 @@ h3{
     font-size: 1.3rem;
     font-weight: 900;
 }
+
+
+
+/* ======================== Page produit ========================== */
+
+
