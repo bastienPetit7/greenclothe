@@ -27,6 +27,11 @@
     <!-- <link rel="stylesheet" href="/css/styles.css"> -->
     <!-- <link href="css/styles.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="/css/style2.css">
+
+    <style>
+
+
+    </style>
 </head>
 
 <body>
@@ -102,10 +107,129 @@
     </nav>
 
 
+    <div class="container-fluid  pad-5 ">
+        <!-- Header Tableau de bord Mon compte -->
+        <div class="row main-menu-profil ">
+
+            <div class=" col-12 block-top-account py-0">
+                <div class="block-title-account text-center py-2 ">
+                    <i class="fas fa-chevron-right chevron-dropDown" id="chevronDropdown"></i>
+                    <h1>mon compte</h1>
+                </div>
+            </div>
+            <div class=" block-content" >
+                <ul class="menu-account" id="menuAcount">
+                    <li class="current"><a href="">tableau de bord</a></li>
+                    <li><a href="">mes commandes</a></li>
+                    <li><a href="">mes informationsmes adresses</a></li>
+                    <li><a href="">mes adresses</a></li>
+                    <li><a href="">mes retours</a></li>
+                    <li><a href="">mes avoirs / réductions</a></li>
+
+                </ul>
+            </div>
+            
+
+        </div>
+
+        <!-- Box Mes informations -->
+        <div class="row box-info flex-column justify-content-center ">
+
+            <div class="row box-title">
+                <div class="col-12">
+                    <h2 class="py-3">Mes informations</h2>
+                </div>
+            </div>
+
+            <div class="row box-content justify-content-start">
+
+                <p class="col-12 col-md-4">M. Bastien Petit <br> Né(e) le 25 Nov. 1985</p>
+                <p class="col-12 col-md-4">Téléphone : 0781149057</p>
+                <p class="col-12 col-md-4">bastien.petit7@gmail.com <br><a href=""
+                        class="text-decoration-none ">Modifier le mot de passe</a></p>
+
+
+            </div>
+
+        </div>
+        <div class="row  mt-2">
+            <div class="col-4 offset-8 p-0 text-right ">
+                <a href="" type="button" class="btn btn-dark link-modif-infos p-2 perso_radius text-uppercase ">modifier
+                    mes informations</a>
+            </div>
+        </div>
+
+        <!-- Box Mes adresses-->
+        <div class="row box-info-adress flex-column mt-4 justify-content-center ">
+
+            <div class=" box-title-adress">
+                <div class="col-12 ">
+                    <h2 class="py-3">Mes adresses</h2>
+                </div>
+            </div>
+
+            <div class="row box-content p-1 justify-content-start ">
+
+                <div class="col-6 col-md-4 p-3  perso_blue-green">
+                    <h6>Adress de facturation</h6>
+                    <span id="adressFacturation">
+                        Bastien Petit <br>
+                        119 boulevard de Saint-Marcel <br>
+                        75005 Paris
+                    </span>
+                </div>
+
+                <div class="col-6 col-md-4 p-3 perso_blue-green">
+                    <h6>Adress de livraison</h6>
+                    <span id="adressLivraison">
+                        Bastien Petit <br>
+                        119 boulevard de Saint-Marcel <br>
+                        75005 Paris
+                    </span>
+
+                </div>
 
 
 
+            </div>
+
+        </div>
+        <div class="row mt-2">
+            <div class="col-4 offset-8 p-0 text-right ">
+                <a href="" type="button"
+                    class="btn btn-dark link-modif-adress p-2 perso_radius text-uppercase ">Gérer mes adresses</a>
+            </div>
+        </div>
+
+        <!-- Box Abonnement -->
+        <div class="row box-info-abonnement mt-4 flex-column justify-content-center ">
+
+            <div class="row box-title-abonnement">
+                <div class="col-12">
+                    <h2 class="py-3">Abonnements</h2>
+                </div>
+            </div>
+
+            <div class="row box-content justify-content-start">
+
+                <div class="col-12 col-md-6">
+                    <input type="checkbox" id="checkBoxNewsletter">
+                    <label for="checkBoxNewsletter">Je souhaite recevoir la newsletter Greenclothe</label>
+                </div>
+
+                <div class="col-12 majeur-only">
+                    <p>En souscrivant à la newsletter, je déclare avoir plus de 16 ans.</p>
+                </div>
+
+            </div>
+
+        </div>
     
+    </div>
+
+
+        
+
 
 
 
@@ -119,15 +243,18 @@
                     <h3 class="text-white h2">15€ offerts pour votre première commande !</h3>
                     <p class="text-white h6 mb-5"> Rejoignez la famille Greenclothe pour recevoir votre code !</p>
                     <div class="row text-center">
-                    <form class=" col-md-4 col-sm-6 mx-auto" >
-                        <div class="form-group">
-                            <label for="emailNewLetter"></label>
-                            <input type="mail" id="emailNewLetter" placeholder="Adress mail" class="form-control mb-4 py-4">
-                            <a type="button" href="/register.html" class="btn btn-outline-light btn-block rounded-pill btn-lg text-uppercase mx-auto mt-3 p-3 px-5">s'inscrire</a>
-                        </div>
-                    </form>
+                        <form class=" col-md-4 col-sm-6 mx-auto">
+                            <div class="form-group">
+                                <label for="emailNewLetter"></label>
+                                <input type="mail" id="emailNewLetter" placeholder="Adress mail"
+                                    class="form-control mb-4 py-4">
+                                <a type="button" href="/register.html"
+                                    class="btn btn-outline-light btn-block rounded-pill btn-lg text-uppercase mx-auto mt-3 p-3 px-5">s'inscrire</a>
+                            </div>
+                        </form>
                     </div>
-                    <small class="mt-3 text-white"> En souscrivant à la newsletter, je déclare avoir plus de 16 ans</small>
+                    <small class="mt-3 text-white"> En souscrivant à la newsletter, je déclare avoir plus de 16
+                        ans</small>
                 </div>
             </div>
         </div>
@@ -151,12 +278,19 @@
             <div class="row text-center mt-3">
                 <div class="col-12">
                     <hr class="my-4">
-                    <ul class="liste-footer list-unstyled list-inline d-flex flex-wrap align-items-center justify-content-center mt-5">
-                        <li class="list-inline-item ml-2 mb-2"><a class="text-white  text-decoration-none text-uppercase" href="#">à propos</a></li>
-                        <li class="list-inline-item ml-2 mb-2"><a class="text-white  text-decoration-none text-uppercase" href="#">faq</a></li>
-                        <li class="list-inline-item ml-2 mb-2"><a class="text-white  text-decoration-none text-uppercase" href="#">livraison et retour</a></li>
-                        <li class="list-inline-item ml-2 mb-2"><a class="text-white  text-decoration-none text-uppercase" href="#">cgv</a></li>
-                        <li class="list-inline-item ml-2 mb-2"><a class="text-white  text-decoration-none text-uppercase" href="#">mention legals</a></li>
+                    <ul
+                        class="liste-footer list-unstyled list-inline d-flex flex-wrap align-items-center justify-content-center mt-5">
+                        <li class="list-inline-item ml-2 mb-2"><a
+                                class="text-white  text-decoration-none text-uppercase" href="#">à propos</a></li>
+                        <li class="list-inline-item ml-2 mb-2"><a
+                                class="text-white  text-decoration-none text-uppercase" href="#">faq</a></li>
+                        <li class="list-inline-item ml-2 mb-2"><a
+                                class="text-white  text-decoration-none text-uppercase" href="#">livraison et retour</a>
+                        </li>
+                        <li class="list-inline-item ml-2 mb-2"><a
+                                class="text-white  text-decoration-none text-uppercase" href="#">cgv</a></li>
+                        <li class="list-inline-item ml-2 mb-2"><a
+                                class="text-white  text-decoration-none text-uppercase" href="#">mention legals</a></li>
                     </ul>
                 </div>
             </div>
@@ -172,6 +306,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
     <!-- Core theme JS-->
+    <script src="/js/toggleDropdown.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

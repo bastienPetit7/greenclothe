@@ -11,6 +11,14 @@
     --main-white : #fff; 
     --color-icon : #333; 
 
+    --greenLight-perso : #f5f7f6; 
+    --green-perso :#b6ccc3 ;
+
+    --redLight-perso : #f8e7e5; 
+    --red-perso :#c96351 ;
+
+    --blueLight-perso : #d6dbdf ;
+
 
     --font-bold : 'Roboto Condensed', sans-serif;
 }
@@ -48,6 +56,7 @@ body {
     height: 4rem;
 } */
 
+.perso_radius{ border-radius: 0%;}
 
 /* =========== NavBar ============== */
 
@@ -1125,4 +1134,232 @@ h3{
     font-family: var(--font-bold);
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+/* =============== Page Profile => Board / information Profil ================ */
+
+.pad-5{
+    padding: 2.5rem;
+            
+}
+
+.main-menu-profil{
+    justify-content: center;
+}
+
+.block-top-account {
+    padding: 0px 0px;
+}
+
+.block-title-account {
+    margin-bottom: 3rem;
+    position: relative;
+
+}
+.chevron-dropDown{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.block-title-account h1 {
+    font-family: var(--font-bold);
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--main-marin-blue);
+}
+
+.block-content-account {}
+
+.menu-account {
+    display: flex;
+}
+
+.menu-account li {
+    
+    /* flex-direction: row; */
+
+    word-break: normal;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    margin: .2rem;
+    font-size: .7rem;
+    list-style-type: none;
+    height: auto;
+    text-align: center;
+
+}
+
+.current{
+    background-color: var(--blueLight-perso);
+}
+
+.menu-account li a {
+    text-decoration: none;
+    color: var(--perso_blue_green);
+    font-family: var(--font-bold);
+    font-weight: 900;
+    
+}
+
+        /* -------------- Box information ---------------- */
+
+
+.box-info {
+    border: 1px solid var(--green-perso);
+    padding: .8rem;
+
+}
+.box-title{
+    /* border: 1px solid transparent; */
+    background-color:var(--greenLight-perso);
+    margin: .8rem .5rem;
+
+}
+.box-title h2{
+    font-size: 1rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+    padding: .3rem;
+    margin-bottom: 0;
+    color: var(--green-perso);
+}
+
+.box-content{
+    margin: .5rem;
+    padding: .5rem .3rem;
+    color: var(--perso_blue_green);
+    font-size: .8rem;
+}
+.box-content a{
+    color: var(--perso_blue_green);
+}
+
+.link-modif-infos{
+    font-size: 0.8rem;
+    background: var(--green-perso);
+    border: none;
+    outline: none;
+}
+
+        /* -------------- Box adress ---------------- */
+
+.box-info-adress {
+    border: 1px solid var(--redLight-perso);
+
+
+}
+.box-title-adress{
+    /* border: 1px solid transparent; */
+    background-color:var(--redLight-perso);
+    
+
+}
+.box-title-adress h2{
+    font-size: 1rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+    padding: .3rem;
+    margin-bottom: 0;
+    color: var(--red-perso);
+}
+
+.link-modif-adress{
+    font-size: 0.8rem;
+    background: var(--red-perso);
+    border: none;
+    outline: none;
+}
+
+        /* ------------- Box Abonnement ----------------- */
+
+.box-info-abonnement {
+    border: 1px solid var(--blueLight-perso);
+    padding: .8rem;
+
+}
+.box-title-abonnement{
+    /* border: 1px solid transparent; */
+    background-color:var(--blueLight-perso);
+    margin: .8rem .5rem;
+
+}
+.box-title-abonnement h2{
+    font-size: 1rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+    padding: .3rem;
+    margin-bottom: 0;
+    color: var(--main-marin-blue);
+}
+
+.majeur-only{
+    font-size: .6rem;
+}
+
+
+
+@media screen and (max-width: 773px){
+
+    .main-menu-profil{
+        justify-content: flex-start;
+        margin-bottom: .8rem;
+    }
+
+    .block-title-account{
+
+        border: 0.4px solid var(--blueLight-perso);
+        margin-bottom: 0;
+    }
+    
+    .block-title-account h1 {
+       
+        font-size: 1.6rem;
+        font-weight: 100;
+    
+    }
+   
+    .block-content{
+        
+        width: 100%;
+        
+    }
+
+    .menu-account {
+
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        
+        
+        
+    }
+
+    .chevron-dropDown{
+        display: block;
+    }
+    
+    .active{
+        display: flex;
+        border-left: 1px solid var(--blueLight-perso);
+        border-right: 1px solid var(--blueLight-perso);
+        border-bottom: 1px solid var(--blueLight-perso);
+    }
+
+    .menu-account li {
+    
+        align-items: flex-start;
+
+    }
+
+    .box-info{
+        
+    }
+    
+
 }
