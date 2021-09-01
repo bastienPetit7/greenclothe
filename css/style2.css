@@ -6,6 +6,7 @@
 }
 
 :root {
+    
     --main-marin-blue : #10364f ; 
     --main-orange : #fab40b ; 
     --main-white : #fff; 
@@ -31,6 +32,7 @@
 .perso_font_mano{ font-family: 'Damion', Arial, Helvetica, sans-serif;}
 .perso_font_main{ font-family: 'Poppins', Arial, Helvetica, sans-serif;}
 .perso_font_menu{ font-family: 'Roboto', Arial, Helvetica, sans-serif;}
+.perso_font_bold{ font-family: var(--font-bold);}
 
 html, body{
     width: 100%;
@@ -49,7 +51,7 @@ body {
 .perso_bg_orange{ background-color: var(--main-orange);}
 .perso_orange{ color: var(--main-orange)}
 .perso_blue-green{color: var(--main-marin-blue);}
-
+.perso-red{color: var(--red-perso);}
 
 /* .logo{
     width: 10rem;
@@ -1136,7 +1138,7 @@ h3{
     font-size: 1.5rem;
 }
 
-/* =============== Page Profile => Board / information Profil ================ */
+/* =============== Page Profile =>DashBoard-mon Compte ================ */
 
 .pad-5{
     padding: 2.5rem;
@@ -1220,6 +1222,21 @@ h3{
     margin: .8rem .5rem;
 
 }
+.box-title-info{
+    /* border: 1px solid transparent; */
+    background-color:var(--greenLight-perso);
+    
+
+}
+.box-title-info h2{
+    font-size: 1.2rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+    padding: .3rem;
+    margin-bottom: 0;
+    color: var(--green-perso);
+}
+
 .box-title h2{
     font-size: 1rem;
     font-family: var(--font-bold);
@@ -1235,6 +1252,14 @@ h3{
     color: var(--perso_blue_green);
     font-size: .8rem;
 }
+.box-content input{
+    padding: 0.5rem;
+    background-color: var(--greenLight-perso);
+    border: none;
+    margin: 0.2rem 0;
+    outline: none;
+}
+
 .box-content a{
     color: var(--perso_blue_green);
 }
@@ -1343,7 +1368,7 @@ h3{
     .chevron-dropDown{
         display: block;
     }
-    
+
     .active{
         display: flex;
         border-left: 1px solid var(--blueLight-perso);
@@ -1363,3 +1388,85 @@ h3{
     
 
 }
+
+
+/* =============== Page Profile =>Mes informations-mon Compte ================ */
+
+.box-info-edit{
+    border: 1px solid var(--green-perso);
+}
+
+.box-title-info-edit{
+    background-color:var(--greenLight-perso);
+}
+
+                     /* ----- Select Box Date de naissance */
+
+.select-birthDate select{
+    background-color: var(--greenLight-perso);
+    border: none;
+    outline: none;
+}
+#birthDay{
+    padding: 0.2rem;
+    width: 6rem;
+}
+#birthMonth{
+    padding: 0.2rem;
+    width: 6rem;
+    margin-left: 0.3rem;
+}
+#birthYear{
+    padding: 0.2rem;
+    width: 12rem;
+    margin-left: 0.3rem;
+}
+
+.box-content{
+    /* Voir box-content Box information */
+}
+
+.hidden{
+    display: none;
+}
+
+.link-retour{
+    background-color: var(--blueLight-perso);
+    padding: 0.2rem 0.4rem; 
+}
+.link-retour i{
+    font-size: 15px;
+}
+
+
+/* =============== Page Profile =>Mes adresses-mon Compte ================ */
+
+.adresses{
+    margin-top: 3rem;
+    padding: 0 9rem;
+}
+
+.mes-adresses h2{
+    font-size: 1.2rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+}
+
+.mes-adresses h4{
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+}
+
+.autres-adresses h2{
+    font-size: 1.2rem;
+    font-family: var(--font-bold);
+    font-weight: 900;
+}
+
+.info-adresse p,a{
+
+    font-size: 0.8rem;
+    margin: 0;
+}
+
