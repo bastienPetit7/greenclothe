@@ -1,5 +1,4 @@
 # GREENCLOTHE     < e-commerce />
 
-voir le site : <br>
-https://bastienpetit7.github.io/greenclothe/
+voir le site : <strong>https://bastienpetit7.github.io/greenclothe/</strong>
 
